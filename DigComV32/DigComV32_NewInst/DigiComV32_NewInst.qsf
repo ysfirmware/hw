@@ -1,0 +1,134 @@
+# Copyright (C) 1991-2008 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+
+# The default values for assignments are stored in the file
+#		DigiComV32_NewInst_assignment_defaults.qdf
+# If this file doesn't exist, and for assignments not listed, see file
+#		assignment_defaults.qdf
+
+# Altera recommends that you do not modify this file. This
+# file is updated automatically by the Quartus II software
+# and any changes you make may be lost or overwritten.
+
+
+set_global_assignment -name FAMILY Cyclone
+set_global_assignment -name DEVICE EP1C4F324C8
+set_global_assignment -name TOP_LEVEL_ENTITY DigiComV32_NewInst
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "8.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:54:45  OCTOBER 24, 2008"
+set_global_assignment -name LAST_QUARTUS_VERSION "8.0 SP1"
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_palace
+set_global_assignment -name BDF_FILE DigiComV32_NewInst.bdf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 14622752 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name CYCLONE_CONFIGURATION_DEVICE EPCS1
+set_global_assignment -name RESERVE_ASDO_AFTER_CONFIGURATION "AS INPUT TRI-STATED"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_J3 -to clk
+set_location_assignment PIN_L14 -to clockStepMode
+set_location_assignment PIN_T12 -to e
+set_location_assignment PIN_T15 -to fgi
+set_location_assignment PIN_U15 -to fgo
+set_location_assignment PIN_M18 -to fgo_sw
+set_location_assignment PIN_U11 -to i
+set_location_assignment PIN_U14 -to ien
+set_location_assignment PIN_L15 -to instructionStepMode
+set_location_assignment PIN_G16 -to keyIn[15]
+set_location_assignment PIN_G17 -to keyIn[14]
+set_location_assignment PIN_G18 -to keyIn[13]
+set_location_assignment PIN_G15 -to keyIn[12]
+set_location_assignment PIN_H16 -to keyIn[11]
+set_location_assignment PIN_H17 -to keyIn[10]
+set_location_assignment PIN_H18 -to keyIn[9]
+set_location_assignment PIN_H15 -to keyIn[8]
+set_location_assignment PIN_C17 -to keyIn[7]
+set_location_assignment PIN_D16 -to keyIn[6]
+set_location_assignment PIN_D17 -to keyIn[5]
+set_location_assignment PIN_D18 -to keyIn[4]
+set_location_assignment PIN_E16 -to keyIn[3]
+set_location_assignment PIN_F16 -to keyIn[2]
+set_location_assignment PIN_F17 -to keyIn[1]
+set_location_assignment PIN_F18 -to keyIn[0]
+set_location_assignment PIN_U12 -to r
+set_location_assignment PIN_R10 -to register_led[7]
+set_location_assignment PIN_U10 -to register_led[6]
+set_location_assignment PIN_V10 -to register_led[5]
+set_location_assignment PIN_R11 -to register_led[4]
+set_location_assignment PIN_V12 -to register_led[3]
+set_location_assignment PIN_T13 -to register_led[2]
+set_location_assignment PIN_U13 -to register_led[1]
+set_location_assignment PIN_V13 -to register_led[0]
+set_location_assignment PIN_M17 -to registerSelect_sw
+set_location_assignment PIN_D15 -to reset_in
+set_location_assignment PIN_L16 -to runMode
+set_location_assignment PIN_V11 -to s
+set_location_assignment PIN_B6 -to segOut1[7]
+set_location_assignment PIN_C6 -to segOut1[6]
+set_location_assignment PIN_D6 -to segOut1[5]
+set_location_assignment PIN_D5 -to segOut1[4]
+set_location_assignment PIN_C5 -to segOut1[3]
+set_location_assignment PIN_A4 -to segOut1[2]
+set_location_assignment PIN_B4 -to segOut1[1]
+set_location_assignment PIN_A7 -to segOut1[0]
+set_location_assignment PIN_A8 -to segOut2[7]
+set_location_assignment PIN_B8 -to segOut2[6]
+set_location_assignment PIN_C8 -to segOut2[5]
+set_location_assignment PIN_E7 -to segOut2[4]
+set_location_assignment PIN_D7 -to segOut2[3]
+set_location_assignment PIN_B7 -to segOut2[2]
+set_location_assignment PIN_C7 -to segOut2[1]
+set_location_assignment PIN_G9 -to segOut2[0]
+set_location_assignment PIN_D9 -to selected_reg[31]
+set_location_assignment PIN_F9 -to selected_reg[30]
+set_location_assignment PIN_A10 -to selected_reg[29]
+set_location_assignment PIN_C9 -to selected_reg[28]
+set_location_assignment PIN_B9 -to selected_reg[27]
+set_location_assignment PIN_E8 -to selected_reg[26]
+set_location_assignment PIN_A9 -to selected_reg[25]
+set_location_assignment PIN_B10 -to selected_reg[24]
+set_location_assignment PIN_B11 -to selected_reg[23]
+set_location_assignment PIN_C11 -to selected_reg[22]
+set_location_assignment PIN_D11 -to selected_reg[21]
+set_location_assignment PIN_A11 -to selected_reg[20]
+set_location_assignment PIN_F10 -to selected_reg[19]
+set_location_assignment PIN_C10 -to selected_reg[18]
+set_location_assignment PIN_D10 -to selected_reg[17]
+set_location_assignment PIN_E11 -to selected_reg[16]
+set_location_assignment PIN_F11 -to selected_reg[15]
+set_location_assignment PIN_A13 -to selected_reg[14]
+set_location_assignment PIN_B13 -to selected_reg[13]
+set_location_assignment PIN_D12 -to selected_reg[12]
+set_location_assignment PIN_C12 -to selected_reg[11]
+set_location_assignment PIN_A12 -to selected_reg[10]
+set_location_assignment PIN_B12 -to selected_reg[9]
+set_location_assignment PIN_C13 -to selected_reg[8]
+set_location_assignment PIN_B15 -to selected_reg[7]
+set_location_assignment PIN_C15 -to selected_reg[6]
+set_location_assignment PIN_B16 -to selected_reg[5]
+set_location_assignment PIN_A15 -to selected_reg[4]
+set_location_assignment PIN_D14 -to selected_reg[3]
+set_location_assignment PIN_D13 -to selected_reg[2]
+set_location_assignment PIN_E13 -to selected_reg[1]
+set_location_assignment PIN_C16 -to selected_reg[0]
+set_location_assignment PIN_U16 -to state_mode_led[2]
+set_location_assignment PIN_T16 -to state_mode_led[1]
+set_location_assignment PIN_T17 -to state_mode_led[0]
+set_location_assignment PIN_L17 -to stepSwitch
+set_global_assignment -name VECTOR_WAVEFORM_FILE ../NewInstTest/DigiComV32_NewInst.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE DigiComV32_NewInst.vwf

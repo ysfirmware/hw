@@ -1,0 +1,21 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_arith.all;
+
+ENTITY fulladder3_vhdl IS
+	PORT (
+		x, y, z		: in	integer range 0 to 1;
+		S, C		: out 	std_logic
+		);
+END fulladder3_vhdl;
+
+ARCHITECTURE design OF fulladder3_vhdl IS
+	signal sum			: std_logic_vector(1 downto 0);
+BEGIN
+	process(x, y, z)
+	begin
+		sum <= conv_std_logic_vector(x + y + z, 2);
+	end process;
+	S <= sum(0);
+	C <= sum(1);
+end design;

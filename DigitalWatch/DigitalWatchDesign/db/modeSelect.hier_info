@@ -1,0 +1,10 @@
+|modeSelect
+reset => sw0_node.ACLR
+reset => mode[1].ACLR
+reset => mode[0].ACLR
+clk => sw0_node.CLK
+sw0 => sw0_node.DATAIN
+mode_out[0] <= mode[0].DB_MAX_OUTPUT_PORT_TYPE
+mode_out[1] <= mode[1].DB_MAX_OUTPUT_PORT_TYPE
+
+

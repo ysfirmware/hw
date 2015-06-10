@@ -1,0 +1,14 @@
+|ClockSync
+CLK => x.CLK
+CLK => y.CLK
+CLK => z.CLK
+a => y~0.IN1
+a => f.IN0
+a => e.IN0
+b => e.IN1
+c => z~0.IN1
+c => g~0.IN0
+d <= g~0.DB_MAX_OUTPUT_PORT_TYPE
+k <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+

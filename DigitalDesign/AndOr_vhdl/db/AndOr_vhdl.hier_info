@@ -1,0 +1,11 @@
+|AndOr_vhdl
+a => or_out~0.IN0
+a => and_out~0.IN0
+a => not_out.DATAIN
+b => or_out~0.IN1
+b => and_out~0.IN1
+and_out <= and_out~0.DB_MAX_OUTPUT_PORT_TYPE
+or_out <= or_out~0.DB_MAX_OUTPUT_PORT_TYPE
+not_out <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,11 @@
+|AndOr_sch
+and_out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN1
+a => inst2.IN0
+b => inst.IN1
+b => inst1.IN0
+or_out <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+not_out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+

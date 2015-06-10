@@ -1,0 +1,68 @@
+Version 8.0 Build 231 07/10/2008 Service Pack 1 SJ Web Edition
+38
+2455
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+nBitAddSub_sch
+# storage
+db|nBitAddSub_sch.(0).cnf
+db|nBitAddSub_sch.(0).cnf
+# case_insensitive
+# source_file
+nBitAddSub_sch.bdf
+cb4d64847ba2ffaf48a03ff3d1f754
+25
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+FullAdder_sch
+# storage
+db|nBitAddSub_sch.(1).cnf
+db|nBitAddSub_sch.(1).cnf
+# case_insensitive
+# source_file
+FullAdder_sch.bdf
+88bef0a0b454f7d6f0c27d715a4ef954
+25
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+FullAdder_sch:inst3
+FullAdder_sch:inst1
+FullAdder_sch:inst2
+FullAdder_sch:inst
+}
+# macro_sequence
+
+# end
+# complete
+

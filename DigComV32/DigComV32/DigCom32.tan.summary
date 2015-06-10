@@ -1,0 +1,106 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 7.029 ns
+From           : instructionStepMode
+To             : DC32VQM:inst|simplecom_ro1:DC_inst|scounter:inst3|delay_sc_clr
+From Clock     : --
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 29.496 ns
+From           : DC32VQM:inst|simplecom_ro1:DC_inst|regOut:inst10|reg_select[1]
+To             : SelectedReg[25]
+From Clock     : clk
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 14.666 ns
+From           : reset_in
+To             : SelectedReg[15]
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 6.743 ns
+From           : keyIn[13]
+To             : DC32VQM:inst|simplecom_ro1:DC_inst|inpoutp:inst7|input[3]
+From Clock     : --
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clk'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 19.80 MHz ( period = 50.508 ns )
+From           : DC32VQM:inst|simplecom_ro1:DC_inst|scounter:inst3|cnt[1]
+To             : lpm_ram_io:inst1|altram:sram|altsyncram:ram_block|altsyncram_2891:auto_generated|ram_block1a2~porta_datain_reg0
+From Clock     : clk
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clockStepMode'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 32.98 MHz ( period = 30.320 ns )
+From           : DC32VQM:inst|simplecom_ro1:DC_inst|scounter:inst3|cnt[0]
+To             : DC32VQM:inst|simplecom_ro1:DC_inst|reg:inst5|pc[1]
+From Clock     : clockStepMode
+To Clock       : clockStepMode
+Failed Paths   : 0
+
+Type           : Clock Setup: 'instructionStepMode'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 320.10 MHz ( period = 3.124 ns )
+From           : DC32VQM:inst|simplecom_ro1:DC_inst|scounter:inst3|cnt[1]
+To             : DC32VQM:inst|simplecom_ro1:DC_inst|scounter:inst3|cnt[4]
+From Clock     : instructionStepMode
+To Clock       : instructionStepMode
+Failed Paths   : 0
+
+Type           : Clock Hold: 'clk'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : DC32VQM:inst|simplecom_ro1:DC_inst|addlogic:inst13|e2
+To             : DC32VQM:inst|simplecom_ro1:DC_inst|reg:inst5|ac[15]
+From Clock     : clk
+To Clock       : clk
+Failed Paths   : 1098
+
+Type           : Clock Hold: 'clockStepMode'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : DC32VQM:inst|simplecom_ro1:DC_inst|scounter:inst3|sc_clr_delay
+To             : DC32VQM:inst|simplecom_ro1:DC_inst|scounter:inst3|cnt[1]
+From Clock     : clockStepMode
+To Clock       : clockStepMode
+Failed Paths   : 6
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 1104
+
+--------------------------------------------------------------------------------------
+

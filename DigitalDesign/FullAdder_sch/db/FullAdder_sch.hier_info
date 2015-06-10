@@ -1,0 +1,20 @@
+|FullAdder_sch
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+x => inst5.IN0
+x => inst2.IN0
+x => inst3.IN0
+x => inst9.IN0
+x => inst8.IN0
+y => inst6.IN0
+y => inst3.IN1
+y => inst1.IN1
+y => inst10.IN0
+y => inst8.IN1
+z => inst.IN2
+z => inst7.IN0
+z => inst3.IN2
+z => inst9.IN1
+z => inst10.IN1
+C <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+
+

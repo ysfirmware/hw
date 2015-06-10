@@ -1,0 +1,8 @@
+|SimpleGates_vhdl
+A => X~0.IN0
+B => X~0.IN1
+C => X~1.IN0
+D => X~1.IN1
+X <= X~2.DB_MAX_OUTPUT_PORT_TYPE
+
+

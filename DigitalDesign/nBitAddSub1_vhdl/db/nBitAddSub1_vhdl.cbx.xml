@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="nBitAddSub1_vhdl">
+		<CBX_INST_ENTRY INSTANCE_NAME="|nBitAddSub1_vhdl|lpm_add_sub:Add0" CBX_FILE_NAME="add_sub_mag.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

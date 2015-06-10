@@ -1,0 +1,8 @@
+|FullAdder3_vhdl
+x => Add0.IN1
+y => Add0.IN2
+z => Add1.IN4
+S <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+C <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+

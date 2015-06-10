@@ -1,0 +1,12 @@
+Fitter Status : Successful - Thu Jul 03 20:49:07 2008
+Quartus II Version : 7.2 Build 175 11/20/2007 SP 1 SJ Web Edition
+Revision Name : DC32VQM
+Top-level Entity Name : DC32VQM
+Family : Cyclone
+Device : EP1C4F324C7
+Timing Models : Final
+Total logic elements : 783 / 4,000 ( 20 % )
+Total pins : 122 / 249 ( 49 % )
+Total virtual pins : 0
+Total memory bits : 0 / 78,336 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

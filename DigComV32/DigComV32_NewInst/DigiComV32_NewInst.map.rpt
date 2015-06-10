@@ -1,0 +1,373 @@
+Analysis & Synthesis report for DigiComV32_NewInst
+Sat Oct 25 12:11:17 2008
+Quartus II Version 8.0 Build 231 07/10/2008 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. Analysis & Synthesis RAM Summary
+  8. Logic Cells Representing Combinational Loops
+  9. General Register Statistics
+ 10. Source assignments for LPM_RAM_IO:inst2|altram:sram|altsyncram:ram_block|altsyncram_2891:auto_generated
+ 11. Parameter Settings for User Entity Instance: LPM_RAM_IO:inst2
+ 12. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2008 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                               ;
++-----------------------------+----------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Sat Oct 25 12:11:17 2008        ;
+; Quartus II Version          ; 8.0 Build 231 07/10/2008 SP 1 SJ Web Edition ;
+; Revision Name               ; DigiComV32_NewInst                           ;
+; Top-level Entity Name       ; DigiComV32_NewInst                           ;
+; Family                      ; Cyclone                                      ;
+; Total logic elements        ; 769                                          ;
+; Total pins                  ; 167                                          ;
+; Total virtual pins          ; 0                                            ;
+; Total memory bits           ; 65,536                                       ;
+; DSP block 9-bit elements    ; N/A until Partition Merge                    ;
+; Total PLLs                  ; 0                                            ;
+; Total DLLs                  ; N/A until Partition Merge                    ;
++-----------------------------+----------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                          ;
++--------------------------------------------------------------+--------------------+--------------------+
+; Option                                                       ; Setting            ; Default Value      ;
++--------------------------------------------------------------+--------------------+--------------------+
+; Device                                                       ; EP1C4F324C8        ;                    ;
+; Top-level entity name                                        ; DigiComV32_NewInst ; DigiComV32_NewInst ;
+; Family name                                                  ; Cyclone            ; Stratix II         ;
+; Use Generated Physical Constraints File                      ; Off                ;                    ;
+; Use smart compilation                                        ; Off                ; Off                ;
+; Maximum processors allowed for parallel compilation          ; 1                  ; 1                  ;
+; Restructure Multiplexers                                     ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                          ; Off                ; Off                ;
+; Preserve fewer node names                                    ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                    ; Off                ; Off                ;
+; Verilog Version                                              ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                 ; VHDL93             ; VHDL93             ;
+; State Machine Processing                                     ; Auto               ; Auto               ;
+; Safe State Machine                                           ; Off                ; Off                ;
+; Extract Verilog State Machines                               ; On                 ; On                 ;
+; Extract VHDL State Machines                                  ; On                 ; On                 ;
+; Ignore Verilog initial constructs                            ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                   ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops               ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                      ; On                 ; On                 ;
+; Parallel Synthesis                                           ; Off                ; Off                ;
+; NOT Gate Push-Back                                           ; On                 ; On                 ;
+; Power-Up Don't Care                                          ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                 ; Off                ; Off                ;
+; Remove Duplicate Registers                                   ; On                 ; On                 ;
+; Ignore CARRY Buffers                                         ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                       ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                    ; Off                ; Off                ;
+; Ignore LCELL Buffers                                         ; Off                ; Off                ;
+; Ignore SOFT Buffers                                          ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                               ; Off                ; Off                ;
+; Optimization Technique                                       ; Balanced           ; Balanced           ;
+; Carry Chain Length                                           ; 70                 ; 70                 ;
+; Auto Carry Chains                                            ; On                 ; On                 ;
+; Auto Open-Drain Pins                                         ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                        ; Off                ; Off                ;
+; Perform gate-level register retiming                         ; Off                ; Off                ;
+; Allow register retiming to trade off Tsu/Tco with Fmax       ; On                 ; On                 ;
+; Auto ROM Replacement                                         ; On                 ; On                 ;
+; Auto RAM Replacement                                         ; On                 ; On                 ;
+; Auto Shift Register Replacement                              ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                ; On                 ; On                 ;
+; Strict RAM Replacement                                       ; Off                ; Off                ;
+; Allow Synchronous Control Signals                            ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                       ; Off                ; Off                ;
+; Auto RAM Block Balancing                                     ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                            ; Off                ; Off                ;
+; Auto Resource Sharing                                        ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                           ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                           ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                ; Off                ; Off                ;
+; Ignore translate_off and synthesis_off directives            ; Off                ; Off                ;
+; Show Parameter Settings Tables in Synthesis Report           ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                           ; Off                ; Off                ;
+; Synchronization Register Chain Length                        ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                 ; Normal compilation ; Normal compilation ;
+; HDL message level                                            ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages              ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report     ; 100                ; 100                ;
+; Number of Inverted Registers Reported in Synthesis Report    ; 100                ; 100                ;
+; Clock MUX Protection                                         ; On                 ; On                 ;
+; Block Design Naming                                          ; Auto               ; Auto               ;
+; Synthesis Effort                                             ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal ; On                 ; On                 ;
++--------------------------------------------------------------+--------------------+--------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                          ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                          ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------+
+; DigiComV32_NewInst.bdf           ; yes             ; User Block Diagram/Schematic File  ; G:/Work2008/NowWorking/compArch/DigiCom/DigiComV32_NewInst/DigiComV32_NewInst.bdf     ;
+; DigiComV32_NewInst_BSF.vhd       ; yes             ; Other                              ; G:/Work2008/NowWorking/compArch/DigiCom/DigiComV32_NewInst/DigiComV32_NewInst_BSF.vhd ;
+; simplecom_ro1.vqm                ; yes             ; Other                              ; G:/Work2008/NowWorking/compArch/DigiCom/DigiComV32_NewInst/simplecom_ro1.vqm          ;
+; control.vhd                      ; yes             ; Other                              ; G:/Work2008/NowWorking/compArch/DigiCom/DigiComV32_NewInst/control.vhd                ;
+; LPM_RAM_IO.tdf                   ; yes             ; Megafunction                       ; c:/altera/80sp1/quartus/libraries/megafunctions/LPM_RAM_IO.tdf                        ;
+; altram.inc                       ; yes             ; Megafunction                       ; c:/altera/80sp1/quartus/libraries/megafunctions/altram.inc                            ;
+; lpm_mux.inc                      ; yes             ; Megafunction                       ; c:/altera/80sp1/quartus/libraries/megafunctions/lpm_mux.inc                           ;
+; lpm_decode.inc                   ; yes             ; Megafunction                       ; c:/altera/80sp1/quartus/libraries/megafunctions/lpm_decode.inc                        ;
+; aglobal80.inc                    ; yes             ; Megafunction                       ; c:/altera/80sp1/quartus/libraries/megafunctions/aglobal80.inc                         ;
+; altram.tdf                       ; yes             ; Megafunction                       ; c:/altera/80sp1/quartus/libraries/megafunctions/altram.tdf                            ;
+; memmodes.inc                     ; yes             ; Megafunction                       ; c:/altera/80sp1/quartus/libraries/others/maxplus2/memmodes.inc                        ;
+; altsyncram.inc                   ; yes             ; Megafunction                       ; c:/altera/80sp1/quartus/libraries/megafunctions/altsyncram.inc                        ;
+; altqpram.inc                     ; yes             ; Megafunction                       ; c:/altera/80sp1/quartus/libraries/megafunctions/altqpram.inc                          ;
+; altsyncram.tdf                   ; yes             ; Megafunction                       ; c:/altera/80sp1/quartus/libraries/megafunctions/altsyncram.tdf                        ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                       ; c:/altera/80sp1/quartus/libraries/megafunctions/stratix_ram_block.inc                 ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                       ; c:/altera/80sp1/quartus/libraries/megafunctions/a_rdenreg.inc                         ;
+; altrom.inc                       ; yes             ; Megafunction                       ; c:/altera/80sp1/quartus/libraries/megafunctions/altrom.inc                            ;
+; altdpram.inc                     ; yes             ; Megafunction                       ; c:/altera/80sp1/quartus/libraries/megafunctions/altdpram.inc                          ;
+; db/altsyncram_2891.tdf           ; yes             ; Auto-Generated Megafunction        ; G:/Work2008/NowWorking/compArch/DigiCom/DigiComV32_NewInst/db/altsyncram_2891.tdf     ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                          ;
++---------------------------------------------+------------------------------------------------------------------------+
+; Resource                                    ; Usage                                                                  ;
++---------------------------------------------+------------------------------------------------------------------------+
+; Total logic elements                        ; 769                                                                    ;
+;     -- Combinational with no register       ; 527                                                                    ;
+;     -- Register only                        ; 18                                                                     ;
+;     -- Combinational with a register        ; 224                                                                    ;
+;                                             ;                                                                        ;
+; Logic element usage by number of LUT inputs ;                                                                        ;
+;     -- 4 input functions                    ; 457                                                                    ;
+;     -- 3 input functions                    ; 103                                                                    ;
+;     -- 2 input functions                    ; 160                                                                    ;
+;     -- 1 input functions                    ; 30                                                                     ;
+;     -- 0 input functions                    ; 1                                                                      ;
+;                                             ;                                                                        ;
+; Logic elements by mode                      ;                                                                        ;
+;     -- normal mode                          ; 648                                                                    ;
+;     -- arithmetic mode                      ; 121                                                                    ;
+;     -- qfbk mode                            ; 58                                                                     ;
+;     -- register cascade mode                ; 0                                                                      ;
+;     -- synchronous clear/load mode          ; 130                                                                    ;
+;     -- asynchronous clear/load mode         ; 215                                                                    ;
+;                                             ;                                                                        ;
+; Total registers                             ; 242                                                                    ;
+; Total logic cells in carry chains           ; 129                                                                    ;
+; I/O pins                                    ; 167                                                                    ;
+; Total memory bits                           ; 65536                                                                  ;
+; Maximum fan-out node                        ; DigiComV32_NewInst_BSF:inst|simplecom_ro1:DC_inst|reset:inst|reset_out ;
+; Maximum fan-out                             ; 232                                                                    ;
+; Total fan-out                               ; 3561                                                                   ;
+; Average fan-out                             ; 3.74                                                                   ;
++---------------------------------------------+------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                      ;
++----------------------------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                   ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                                  ; Library Name ;
++----------------------------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------------------------+--------------+
+; |DigiComV32_NewInst                          ; 769 (1)     ; 242          ; 65536       ; 167  ; 0            ; 527 (1)      ; 18 (0)            ; 224 (0)          ; 129 (0)         ; 58 (0)     ; |DigiComV32_NewInst                                                                                  ; work         ;
+;    |DigiComV32_NewInst_BSF:inst|             ; 683 (0)     ; 242          ; 0           ; 0    ; 0            ; 441 (0)      ; 18 (0)            ; 224 (0)          ; 129 (0)         ; 58 (0)     ; |DigiComV32_NewInst|DigiComV32_NewInst_BSF:inst                                                      ; work         ;
+;       |simplecom_ro1:DC_inst|                ; 683 (0)     ; 242          ; 0           ; 0    ; 0            ; 441 (0)      ; 18 (0)            ; 224 (0)          ; 129 (0)         ; 58 (0)     ; |DigiComV32_NewInst|DigiComV32_NewInst_BSF:inst|simplecom_ro1:DC_inst                                ; work         ;
+;          |addlogic:inst13|                   ; 26 (26)     ; 2            ; 0           ; 0    ; 0            ; 24 (24)      ; 0 (0)             ; 2 (2)            ; 17 (17)         ; 3 (3)      ; |DigiComV32_NewInst|DigiComV32_NewInst_BSF:inst|simplecom_ro1:DC_inst|addlogic:inst13                ;              ;
+;          |decoder:inst11|                    ; 8 (8)       ; 8            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 8 (8)            ; 0 (0)           ; 0 (0)      ; |DigiComV32_NewInst|DigiComV32_NewInst_BSF:inst|simplecom_ro1:DC_inst|decoder:inst11                 ;              ;
+;          |inpoutp:inst7|                     ; 89 (89)     ; 36           ; 0           ; 0    ; 0            ; 53 (53)      ; 3 (3)             ; 33 (33)          ; 0 (0)           ; 8 (8)      ; |DigiComV32_NewInst|DigiComV32_NewInst_BSF:inst|simplecom_ro1:DC_inst|inpoutp:inst7                  ;              ;
+;          |reg:inst5|                         ; 335 (335)   ; 117          ; 0           ; 0    ; 0            ; 218 (218)    ; 13 (13)           ; 104 (104)        ; 56 (56)         ; 46 (46)    ; |DigiComV32_NewInst|DigiComV32_NewInst_BSF:inst|simplecom_ro1:DC_inst|reg:inst5                      ;              ;
+;          |regOut:inst10|                     ; 126 (126)   ; 4            ; 0           ; 0    ; 0            ; 122 (122)    ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |DigiComV32_NewInst|DigiComV32_NewInst_BSF:inst|simplecom_ro1:DC_inst|regOut:inst10                  ;              ;
+;          |reset:inst|                        ; 27 (27)     ; 21           ; 0           ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 21 (21)          ; 19 (19)         ; 0 (0)      ; |DigiComV32_NewInst|DigiComV32_NewInst_BSF:inst|simplecom_ro1:DC_inst|reset:inst                     ;              ;
+;          |scounter:inst3|                    ; 67 (67)     ; 50           ; 0           ; 0    ; 0            ; 17 (17)      ; 2 (2)             ; 48 (48)          ; 37 (37)         ; 1 (1)      ; |DigiComV32_NewInst|DigiComV32_NewInst_BSF:inst|simplecom_ro1:DC_inst|scounter:inst3                 ;              ;
+;          |stepClkGen:inst8|                  ; 5 (5)       ; 4            ; 0           ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |DigiComV32_NewInst|DigiComV32_NewInst_BSF:inst|simplecom_ro1:DC_inst|stepClkGen:inst8               ;              ;
+;    |control:inst1|                           ; 65 (65)     ; 0            ; 0           ; 0    ; 0            ; 65 (65)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |DigiComV32_NewInst|control:inst1                                                                    ; work         ;
+;    |lpm_ram_io:inst2|                        ; 20 (20)     ; 0            ; 65536       ; 0    ; 0            ; 20 (20)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |DigiComV32_NewInst|lpm_ram_io:inst2                                                                 ; work         ;
+;       |altram:sram|                          ; 0 (0)       ; 0            ; 65536       ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |DigiComV32_NewInst|lpm_ram_io:inst2|altram:sram                                                     ; work         ;
+;          |altsyncram:ram_block|              ; 0 (0)       ; 0            ; 65536       ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |DigiComV32_NewInst|lpm_ram_io:inst2|altram:sram|altsyncram:ram_block                                ; work         ;
+;             |altsyncram_2891:auto_generated| ; 0 (0)       ; 0            ; 65536       ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |DigiComV32_NewInst|lpm_ram_io:inst2|altram:sram|altsyncram:ram_block|altsyncram_2891:auto_generated ; work         ;
++----------------------------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                               ;
++---------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+---------+
+; Name                                                                                        ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF     ;
++---------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+---------+
+; lpm_ram_io:inst2|altram:sram|altsyncram:ram_block|altsyncram_2891:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 4096         ; 16           ; --           ; --           ; 65536 ; ex1.mif ;
++---------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+---------+
+
+
++-------------------------------------------------------------------------------------+
+; Logic Cells Representing Combinational Loops                                        ;
++---------------------------------------------------------------------------------+---+
+; Logic Cell Name                                                                 ;   ;
++---------------------------------------------------------------------------------+---+
+; DigiComV32_NewInst_BSF:inst|simplecom_ro1:DC_inst|regOut:inst10|register_led[7] ;   ;
+; DigiComV32_NewInst_BSF:inst|simplecom_ro1:DC_inst|regOut:inst10|register_led[6] ;   ;
+; DigiComV32_NewInst_BSF:inst|simplecom_ro1:DC_inst|regOut:inst10|register_led[5] ;   ;
+; DigiComV32_NewInst_BSF:inst|simplecom_ro1:DC_inst|regOut:inst10|register_led[4] ;   ;
+; DigiComV32_NewInst_BSF:inst|simplecom_ro1:DC_inst|regOut:inst10|register_led[3] ;   ;
+; DigiComV32_NewInst_BSF:inst|simplecom_ro1:DC_inst|regOut:inst10|register_led[2] ;   ;
+; DigiComV32_NewInst_BSF:inst|simplecom_ro1:DC_inst|regOut:inst10|register_led[1] ;   ;
+; DigiComV32_NewInst_BSF:inst|simplecom_ro1:DC_inst|regOut:inst10|register_led[0] ;   ;
+; Number of logic cells representing combinational loops                          ; 8 ;
++---------------------------------------------------------------------------------+---+
+Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 242   ;
+; Number of registers using Synchronous Clear  ; 36    ;
+; Number of registers using Synchronous Load   ; 25    ;
+; Number of registers using Asynchronous Clear ; 198   ;
+; Number of registers using Asynchronous Load  ; 17    ;
+; Number of registers using Clock Enable       ; 131   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; Source assignments for LPM_RAM_IO:inst2|altram:sram|altsyncram:ram_block|altsyncram_2891:auto_generated ;
++---------------------------------+--------------------+------+-------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                        ;
++---------------------------------+--------------------+------+-------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                         ;
++---------------------------------+--------------------+------+-------------------------------------------+
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LPM_RAM_IO:inst2 ;
++------------------------+--------------+-----------------------+
+; Parameter Name         ; Value        ; Type                  ;
++------------------------+--------------+-----------------------+
+; LPM_WIDTH              ; 16           ; Untyped               ;
+; LPM_WIDTHAD            ; 12           ; Untyped               ;
+; LPM_NUMWORDS           ; 4096         ; Untyped               ;
+; LPM_INDATA             ; REGISTERED   ; Untyped               ;
+; LPM_ADDRESS_CONTROL    ; REGISTERED   ; Untyped               ;
+; LPM_OUTDATA            ; UNREGISTERED ; Untyped               ;
+; LPM_FILE               ; ex1.mif      ; Untyped               ;
+; USE_EAB                ; ON           ; Untyped               ;
+; DEVICE_FAMILY          ; Cyclone      ; Untyped               ;
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY            ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY          ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE          ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE        ;
++------------------------+--------------+-----------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 8.0 Build 231 07/10/2008 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sat Oct 25 12:11:05 2008
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DigiComV32_NewInst -c DigiComV32_NewInst
+Info: Found 1 design units, including 1 entities, in source file DigiComV32_NewInst.bdf
+    Info: Found entity 1: DigiComV32_NewInst
+Info: Elaborating entity "DigiComV32_NewInst" for the top level hierarchy
+Warning: Can't find a definition for parameter LPM_FILE -- assuming ex1.mif was intended to be a quoted string
+Warning: Using design file DigiComV32_NewInst_BSF.vhd, which is not specified as a design file for the current project, but contains definitions for 3 design units and 1 entities in project
+    Info: Found design unit 1: DigiComV32_NewInst_package
+    Info: Found design unit 2: DigiComV32_NewInst_BSF-design
+    Info: Found entity 1: DigiComV32_NewInst_BSF
+Info: Elaborating entity "DigiComV32_NewInst_BSF" for hierarchy "DigiComV32_NewInst_BSF:inst"
+Warning: Using design file simplecom_ro1.vqm, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: simplecom_ro1
+Info: Elaborating entity "simplecom_ro1" for hierarchy "DigiComV32_NewInst_BSF:inst|simplecom_ro1:DC_inst"
+Warning: Using design file control.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info: Found design unit 1: control-control_arch
+    Info: Found entity 1: control
+Info: Elaborating entity "control" for hierarchy "control:inst1"
+Info: Elaborating entity "LPM_RAM_IO" for hierarchy "LPM_RAM_IO:inst2"
+Info: Elaborated megafunction instantiation "LPM_RAM_IO:inst2"
+Info: Instantiated megafunction "LPM_RAM_IO:inst2" with the following parameter:
+    Info: Parameter "LPM_ADDRESS_CONTROL" = "REGISTERED"
+    Info: Parameter "LPM_FILE" = "ex1.mif"
+    Info: Parameter "LPM_INDATA" = "REGISTERED"
+    Info: Parameter "LPM_NUMWORDS" = "4096"
+    Info: Parameter "LPM_OUTDATA" = "UNREGISTERED"
+    Info: Parameter "LPM_WIDTH" = "16"
+    Info: Parameter "LPM_WIDTHAD" = "12"
+Info: Elaborating entity "altram" for hierarchy "LPM_RAM_IO:inst2|altram:sram"
+Warning: Assertion warning: altram does not support Cyclone device family -- attempting best-case memory conversions, but power-up states and read during write behavior will be different for Cyclone devices
+Info: Elaborated megafunction instantiation "LPM_RAM_IO:inst2|altram:sram", which is child of megafunction instantiation "LPM_RAM_IO:inst2"
+Info: Elaborating entity "altsyncram" for hierarchy "LPM_RAM_IO:inst2|altram:sram|altsyncram:ram_block"
+Info: Elaborated megafunction instantiation "LPM_RAM_IO:inst2|altram:sram|altsyncram:ram_block", which is child of megafunction instantiation "LPM_RAM_IO:inst2"
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_2891.tdf
+    Info: Found entity 1: altsyncram_2891
+Info: Elaborating entity "altsyncram_2891" for hierarchy "LPM_RAM_IO:inst2|altram:sram|altsyncram:ram_block|altsyncram_2891:auto_generated"
+Info: WYSIWYG I/O primitives converted to equivalent logic
+    Info: WYSIWYG I/O primitive "DigiComV32_NewInst_BSF:inst|simplecom_ro1:DC_inst|cb[11]~I" converted to equivalent logic
+    Info: WYSIWYG I/O primitive "DigiComV32_NewInst_BSF:inst|simplecom_ro1:DC_inst|cb[10]~I" converted to equivalent logic
+    Info: WYSIWYG I/O primitive "DigiComV32_NewInst_BSF:inst|simplecom_ro1:DC_inst|cb[9]~I" converted to equivalent logic
+    Info: WYSIWYG I/O primitive "DigiComV32_NewInst_BSF:inst|simplecom_ro1:DC_inst|cb[8]~I" converted to equivalent logic
+    Info: WYSIWYG I/O primitive "DigiComV32_NewInst_BSF:inst|simplecom_ro1:DC_inst|cb[7]~I" converted to equivalent logic
+    Info: WYSIWYG I/O primitive "DigiComV32_NewInst_BSF:inst|simplecom_ro1:DC_inst|cb[6]~I" converted to equivalent logic
+    Info: WYSIWYG I/O primitive "DigiComV32_NewInst_BSF:inst|simplecom_ro1:DC_inst|cb[5]~I" converted to equivalent logic
+    Info: WYSIWYG I/O primitive "DigiComV32_NewInst_BSF:inst|simplecom_ro1:DC_inst|cb[4]~I" converted to equivalent logic
+    Info: WYSIWYG I/O primitive "DigiComV32_NewInst_BSF:inst|simplecom_ro1:DC_inst|cb[3]~I" converted to equivalent logic
+    Info: WYSIWYG I/O primitive "DigiComV32_NewInst_BSF:inst|simplecom_ro1:DC_inst|cb[2]~I" converted to equivalent logic
+    Info: WYSIWYG I/O primitive "DigiComV32_NewInst_BSF:inst|simplecom_ro1:DC_inst|cb[1]~I" converted to equivalent logic
+    Info: WYSIWYG I/O primitive "DigiComV32_NewInst_BSF:inst|simplecom_ro1:DC_inst|cb[0]~I" converted to equivalent logic
+    Info: WYSIWYG I/O primitive "DigiComV32_NewInst_BSF:inst|simplecom_ro1:DC_inst|cb[15]~I" converted to equivalent logic
+    Info: WYSIWYG I/O primitive "DigiComV32_NewInst_BSF:inst|simplecom_ro1:DC_inst|cb[14]~I" converted to equivalent logic
+    Info: WYSIWYG I/O primitive "DigiComV32_NewInst_BSF:inst|simplecom_ro1:DC_inst|cb[13]~I" converted to equivalent logic
+    Info: WYSIWYG I/O primitive "DigiComV32_NewInst_BSF:inst|simplecom_ro1:DC_inst|cb[12]~I" converted to equivalent logic
+Warning: Output pins are stuck at VCC or GND
+    Warning (13410): Pin "segOut1[0]" is stuck at GND
+    Warning (13410): Pin "segOut2[0]" is stuck at GND
+    Warning (13410): Pin "selected_reg[24]" is stuck at GND
+    Warning (13410): Pin "selected_reg[16]" is stuck at GND
+    Warning (13410): Pin "selected_reg[8]" is stuck at GND
+    Warning (13410): Pin "selected_reg[0]" is stuck at GND
+Info: Implemented 952 device resources after synthesis - the final resource count might be different
+    Info: Implemented 24 input pins
+    Info: Implemented 127 output pins
+    Info: Implemented 16 bidirectional pins
+    Info: Implemented 769 logic cells
+    Info: Implemented 16 RAM segments
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 183 megabytes
+    Info: Processing ended: Sat Oct 25 12:11:17 2008
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:08
+
+

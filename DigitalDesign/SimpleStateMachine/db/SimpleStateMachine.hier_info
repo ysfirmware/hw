@@ -1,0 +1,10 @@
+|SimpleStateMachine
+m => y~0.DATAB
+n => y~0.DATAA
+i => state~0.DATAA
+i => state~0.DATAB
+clk => state.CLK
+rst => state.ACLR
+y <= y~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,21 @@
+1. Assembler : 어셈블러 실행프로그램, 어셈블러 소스 코드.
+
+2. DigComV32 : 기본컴퓨터 프로젝트 폴더.
+	2.1 DigComV32 : Step mode를 지원하는 기본컴퓨터 프로젝트 폴더.
+	2.2 DigComV32_NewInst : 새로운 명령어를 추가하는 실습을 하기 위한 기본 컴퓨터 프로젝트 폴더.
+	2.3 DigComV32_Schematic : DigComV32 키트의 회로도.
+	2.4 DigComV32VHDL : 기본컴퓨터의 VHDL 소스 폴더.
+	2.5 V32StepModeTestPrograms : 기본컴퓨터의 테스트용 어셈블리 프로그램, MIF 및 다운로드용 pof 파일.
+
+3. DigitalDesign : 디지털 논리회로의 설계 및 실습을 위한 프로젝트 폴더.
+
+4. DigitalWatch : 디지털 시계 설계 관련 프로젝트 폴더.	
+	4.1 DigitalWatch : 디지털 시계 설계 최종 프로젝트 폴더. 
+	4.2 DigitalWatchBDF : 디지털 시계의 설계과정에서 BDF 설계 프로젝트 폴더, 시계동작과 시간 설정 동작만 포함.
+	4.3 DigitalWatchBDF_Timer : DigitalWatchBDF에 타이머 기능이 추가된 설계.
+	4.4 DigitalWatchDesign : BDF 설계 전에 디지털 시계의 설계과정을 포함하는 프로젝트 폴더.
+	    - ClockDivide : 클럭분주를 하는 프로젝트.
+	    - modeSelect : 동작 모드를 결정하는 설계 프로젝트.
+	    - digitalClock : 기본 디지털 시계 설계 프로젝트, 시간 설정기능을 포함하지 않음.
+	    - clockSetting : 시간 설정기능을 포함하는 기본 디지털 시계 프로젝트.
+	    - timeSetPosition : 시간 설정의 위치(시, 분, 초)를 지정하는 프로젝트.

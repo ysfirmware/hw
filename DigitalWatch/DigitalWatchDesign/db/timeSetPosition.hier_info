@@ -1,0 +1,12 @@
+|timeSetPosition
+reset => set_time[2].PRESET
+reset => set_time[1].ACLR
+reset => set_time[0].ACLR
+sw1 => set_time[2].CLK
+sw1 => set_time[1].CLK
+sw1 => set_time[0].CLK
+set_time_out[0] <= set_time[0].DB_MAX_OUTPUT_PORT_TYPE
+set_time_out[1] <= set_time[1].DB_MAX_OUTPUT_PORT_TYPE
+set_time_out[2] <= set_time[2].DB_MAX_OUTPUT_PORT_TYPE
+
+

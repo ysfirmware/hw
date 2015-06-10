@@ -1,0 +1,36 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 9.729 ns
+From           : set_time[0]
+To             : set_time_out[0]
+From Clock     : sw1
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'sw1'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 320.10 MHz ( period = 3.124 ns )
+From           : set_time[0]
+To             : set_time[2]
+From Clock     : sw1
+To Clock       : sw1
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+
