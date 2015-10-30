@@ -1,8 +1,0 @@
-|BidirBus
-io1 <= io1~0
-input => io1~0.DATAIN
-output <= output$latch.DB_MAX_OUTPUT_PORT_TYPE
-ctrl => io1~0.OE
-ctrl => output$latch.LATCH_ENABLE
-
-
