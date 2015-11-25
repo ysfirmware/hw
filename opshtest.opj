@@ -1,0 +1,56 @@
+(ExpressProject ""
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (File ".\150817_opshtest.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (NoModify))
+  (Folder "Outputs")
+  (Folder "Referenced Projects")
+  (PartMRUSelector)
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" ".\150817_opshtest.dsn")
+      (Path "Design Resources" ".\150817_opshtest.dsn" "SCHEMATIC1")
+      (Select "Design Resources" ".\150817_opshtest.dsn" "SCHEMATIC1"
+         "5. REGISTER"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 0 200 0 431"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 75 1719 75 544")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path "E:\EETECH\OPSHTEST\150817_OPSHTEST.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "0. COVER"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -30 100 1744 100 569")
+        (Scroll "-13 0")
+        (Zoom "108")
+        (Occurrence "/"))
+      (Path "E:\EETECH\OPSHTEST\150817_OPSHTEST.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "1. MPU"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 125 1769 125 594")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path "E:\EETECH\OPSHTEST\150817_OPSHTEST.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "5. REGISTER"))))
